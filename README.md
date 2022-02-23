@@ -11,7 +11,7 @@ As a social media startup, I want an API for my social network that uses a NoSQL
 * Ensure that MongoDB and Express are installed on your computer. 
 * Invoke application using npm start. 
 
-## Technologies 
+## Technologies Used
 * JavaScript
 * Node.js
 * MongoDB
