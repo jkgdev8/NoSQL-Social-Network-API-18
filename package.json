@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+    
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,10 @@
   "bugs": {
     "url": "https://github.com/jkgdev8/NoSQL-Social-Network-API-18/issues"
   },
-  "homepage": "https://github.com/jkgdev8/NoSQL-Social-Network-API-18#readme"
+  "homepage": "https://github.com/jkgdev8/NoSQL-Social-Network-API-18#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "moment": "^2.28.0",
+    "mongoose": "^5.10.6"
+  }
 }
