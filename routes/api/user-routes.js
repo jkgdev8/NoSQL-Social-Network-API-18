@@ -24,3 +24,9 @@ router.route('/:userId/friends/:friendId')
     .delete(deleteFriend)
 
 module.exports = router;
+
+// example data
+// {
+//     "username": "lernantino",
+//     "email": "lernantino@gmail.com"
+//   }

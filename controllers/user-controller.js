@@ -34,24 +34,14 @@ const userController = {
         });
     },
 
-    // POST /api/users
-    // expected body:
-    // {
-    //     "username": "foo",
-    //     "email": "bar@baz.com"  // must follow the email format
-    // }
+   
     createUser({ body }, res) {
         User.create(body)
         .then(dbUserData => res.json(dbUserData))
         .catch(err => res.status(400).json(err));
     },
 
-    // PUT /api/users/:id
-    // expected body includes at least one of the attributes below:
-    // {
-    //     "username": "foo",
-    //     "email": "bar@baz.com"  // must follow the email format
-    // }
+    
     updateUser({ params, body }, res) {
         User.findOneAndUpdate({ _id: params.id }, body, { new: true, runValidators: true })
         .then(dbUserData => {
